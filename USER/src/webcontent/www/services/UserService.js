@@ -55,9 +55,7 @@ var serviceUrl = "http://200.49.143.28:7099/sap/opu/odata/sap/Z_SRV_GET_USER_DAT
     _readODataOnError: function (oError) {
        // Parse mensaje de error de R3
         var responseXml = oError.message;		
-		var dialogId = "dialogFilters";
-        var dialog = sap.ui.getCore().byId(dialogId);
-		dialog.close();
+		
 		var fnCallback = function () {
               dialog.close();
             };

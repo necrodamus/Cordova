@@ -9,7 +9,7 @@ NavigationHelper = {
     _actualViews: [],
     //Para guardar la aplicacion en ejecucion
     _sCurrentApp: '',
-    _aAvailableApps: ['SU','LO'],
+    _aAvailableApps: ['App', 'Launchpad'],
 
     /**
      * Referencia:

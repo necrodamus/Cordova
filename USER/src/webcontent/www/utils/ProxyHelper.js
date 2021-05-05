@@ -5,7 +5,7 @@ ProxyHelper = {
         var sHttpPrefix = env.ctx.https ? "https" : "http";
         if ((sServiceUrl) && (sServiceUrl.length > 0) && (sServiceUrl[0] == '/')) {
             switch (window.location.hostname) {
-                case "com.tenaris.loto":
+                case "com.sap.globaluser":
                     sServiceUrl = sHttpPrefix+"://" + env.ctx.gatewayHost + ":" + env.ctx.gatewayPort + sServiceUrl;
                     break;
                 case "localhost":
