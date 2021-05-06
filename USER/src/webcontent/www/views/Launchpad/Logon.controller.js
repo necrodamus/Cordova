@@ -2,6 +2,7 @@ sap.ui.controller("USER.views.Launchpad.Logon", {
     
     // implement an event handler in the Controller
     onInit: function () {
+        sap.ui.core.BusyIndicator.hide();
         let constructor = sap.ui.getCore().byId("App");
 
         let fusr = constructor.byId("uid");

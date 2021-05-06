@@ -19,11 +19,22 @@ sap.ui.jsview("USER.views.Launchpad.Serviceuser", {
                     alignContent: "Center",
                     items: [
                         new sap.m.Input(this.createId("uidx"), { placeholder: "User ID" }),
-
-                        new sap.m.Button({
-                            width: "12rem", text: "Execute", type: "Emphasized",
-                            press: [oController.onGetApp, oController]
+                        new sap.m.HBox({
+                            items:
+                            [
+                                new sap.m.Button({
+                                    width: "12rem", text: "Execute Single", type: "Emphasized",
+                                    press: [oController.onGetApp, oController]
+                                }),
+                                new sap.m.Text({ text: "________" }),
+                                new sap.m.Button({
+                                    width: "12rem", text: "Execute List", type: "Emphasized",
+                                    press: [oController.onGetAppL, oController]
+                                })
+                            ]
                         }),
+
+                        
                         new sap.m.VBox({
                             fitContainer: true,
                             justifyContent: "Center",

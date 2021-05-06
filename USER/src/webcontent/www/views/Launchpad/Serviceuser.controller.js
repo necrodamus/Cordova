@@ -1,5 +1,5 @@
 sap.ui.controller("USER.views.Launchpad.Serviceuser", {
-    that: this,
+ 
     getViewName: function () {
         return this.getView().getId();
     },
@@ -22,6 +22,18 @@ sap.ui.controller("USER.views.Launchpad.Serviceuser", {
             BusyDialogHelper.close();
         }
 
+    },
+
+    onGetAppL: function () {
+        setTimeout(function () {
+
+            NavigationHelper.setCurrentApp("LI");
+            NavigationHelper.to({
+                pageId: "USER.views.List.Listusers"
+//            pageId:"USER.views.Launchpad.Listusers"
+            });
+
+        }, 50);
     },
 
     onGetApp: function () {
